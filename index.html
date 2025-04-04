@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samaksh Sethiya - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc; /* Tailwind gray-50 */
+        color: #1f2937; /* Tailwind gray-800 */
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Section Padding */
+      section {
+        padding-top: 4rem; /* py-16 */
+        padding-bottom: 4rem; /* py-16 */
+      }
+      /* Card Styling */
+      .card {
+        background-color: #ffffff; /* white */
+        border-radius: 0.75rem; /* rounded-xl */
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+        padding: 1.5rem; /* p-6 */
+        margin-bottom: 1.5rem; /* mb-6 */
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+      }
+      /* Button Styling */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; /* Center text now icon is gone */
+        padding: 0.5rem 1rem; /* py-2 px-4 */
+        border-radius: 0.5rem; /* rounded-lg */
+        font-weight: 600; /* font-semibold */
+        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); /* shadow-sm */
+        text-align: center;
+      }
+      .btn-primary {
+        background-color: #4f46e5; /* indigo-600 */
+        color: #ffffff; /* white */
+      }
+      .btn-primary:hover {
+        background-color: #4338ca; /* indigo-700 */
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+      }
+       .btn-secondary {
+        background-color: #e5e7eb; /* gray-200 */
+        color: #1f2937; /* gray-800 */
+      }
+      .btn-secondary:hover {
+        background-color: #d1d5db; /* gray-300 */
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+      }
+      /* Skill Tag Styling */
+      .skill-tag {
+          background-color: #e0e7ff; /* indigo-100 */
+          color: #3730a3; /* indigo-800 */
+          padding: 0.25rem 0.75rem; /* px-3 py-1 */
+          border-radius: 9999px; /* rounded-full */
+          font-size: 0.875rem; /* text-sm */
+          font-weight: 500; /* font-medium */
+          margin: 0.25rem; /* m-1 */
+          display: inline-block;
+      }
+      /* Simple text links for hero section */
+      .hero-link {
+          color: #c7d2fe; /* indigo-200 */
+          text-decoration: underline;
+          margin: 0 0.5rem; /* mx-2 */
+          transition: color 0.2s ease-in-out;
+      }
+      .hero-link:hover {
+          color: #ffffff; /* white */
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header id="about" class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Samaksh Sethiya</h1>
+            <p class="text-xl md:text-2xl text-indigo-100 mb-8">Computer Science Engineering Student</p>
+            <div class="mb-8">
+                <a href="mailto:samakshsethiya22@gmail.com" target="_blank" class="hero-link" aria-label="Email">Email</a> |
+                <a href="tel:+919039014722" class="hero-link" aria-label="Phone">Phone</a> |
+                <a href="https://linkedin.com/in/samaksh-sethiya" target="_blank" class="hero-link" aria-label="LinkedIn">LinkedIn</a> |
+                <a href="https://github.com/Samaksh22" target="_blank" class="hero-link" aria-label="GitHub">GitHub</a>
+            </div>
+             <a href="Samaksh_Sethiya_Resume.pdf" download="Samaksh_Sethiya_Resume.pdf" class="btn btn-secondary">
+                Download Resume
+            </a>
+             <p class="mt-8 max-w-2xl mx-auto text-indigo-200">
+                Driven and detail-oriented Computer Science student at VIT Bhopal with a passion for Machine Learning, AI, and Systems Programming. Proven ability to develop innovative solutions and contribute effectively in team environments. Eager to apply technical skills to real-world challenges.
+            </p>
+        </div>
+    </header>
+
+    <section id="education" class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">Vellore Institute of Technology, Bhopal</h3>
+                <p class="text-gray-600 mb-1">B.Tech. in Computer Science Engineering</p>
+                <p class="text-gray-500 text-sm mb-2">Sept 2022 - Current</p>
+                <p class="text-gray-700">CGPA: 9.07</p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">Bhanpura Public School</h3>
+                <p class="text-gray-600 mb-1">12th Grade</p>
+                <p class="text-gray-500 text-sm mb-2">Completed: May 2022</p>
+                <p class="text-gray-700">Percentage: 92.0%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-3 text-center text-indigo-600">Programming Languages</h3>
+                    <div class="text-center">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Bash</span>
+                    </div>
+                </div>
+                 <div class="card">
+                    <h3 class="text-lg font-semibold mb-3 text-center text-indigo-600">Machine Learning & AI</h3>
+                     <div class="text-center">
+                        <span class="skill-tag">Transformer Models</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">CNNs</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Data Preprocessing</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-3 text-center text-indigo-600">Software & Tools</h3>
+                     <div class="text-center">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">AWS (EC2, S3, Lambda)</span>
+                        <span class="skill-tag">Cloud Deployment</span>
+                        <span class="skill-tag">MATLAB</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-3 text-center text-indigo-600">Database Management</h3>
+                     <div class="text-center">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Database Optimization</span>
+                        <span class="skill-tag">Query Performance Tuning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+        <div class="space-y-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">Mini GPT Model (NLP, PyTorch)</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Built a simplified GPT language model from scratch (1.1M tokens, 10M parameters), achieving validation loss ~1.7 on Shakespeare's work.</li>
+                    <li>Improved training stability (residual connections, layer norm, dropout), boosting performance by 15% for Shakespeare-like text generation.</li>
+                    <li>Developed a full text generation pipeline, demonstrating understanding of transformer architectures and optimization.</li>
+                </ul>
+                </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">Redis Clone (Systems Programming, C)</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Engineered a high-performance in-memory key-value store (50k SET/s, 100k GET/s), optimized memory (120MB/1M pairs, 10% overhead).</li>
+                    <li>Architected a networked server with non-blocking I/O and custom hash tables, reducing lookup latency by 20%.</li>
+                    <li>Designed a lightweight command protocol and enhanced memory management for minimal latency and maximum throughput.</li>
+                </ul>
+                 </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2">ASL Translator (Computer Vision, YOLO, CNN)</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Created a real-time ASL translator (90% accuracy on ASL Alphabet Dataset, 0.90 mAP hand detection with YOLO, 30 FPS).</li>
+                    <li>Implemented YOLO object detection and CNN classification, optimizing with advanced image processing.</li>
+                    <li>Enhanced speed and accuracy via fine-tuning (5K+ custom images) and real-time feedback, boosting accuracy by ~8%.</li>
+                </ul>
+                 </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="bg-gray-100">
+        <div class="container mx-auto px-6">
+             <h2 class="text-3xl font-bold text-center mb-12">Achievements & Leadership</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-600">Achievements</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Top 180 Finalist, HP Power Lab Hackathon (Jan 2025): Led a team of 4 developing energy efficiency solutions for HPCL.</li>
+                        <li>GeeksforGeeks X Adobe GenSolve (July 2024): Competed in solving real-world problems.</li>
+                    </ul>
+                </div>
+                 <div class="card">
+                     <h3 class="text-xl font-semibold mb-4 text-indigo-600">Leadership</h3>
+                     <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Event Coordinator, Pi Mathematics Association: Created visuals increasing event turnout by 20% and social media reach by 15%.</li>
+                        <li>Design Lead, The Poesis Society: Led promotional design for events with 150+ attendees.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div class="card p-4">
+                <p class="font-medium text-gray-700">C Programming for Everybody</p>
+                <p class="text-sm text-gray-500">Coursera</p>
+            </div>
+             <div class="card p-4">
+                <p class="font-medium text-gray-700">The Bits and Bytes of Computer Networking</p>
+                <p class="text-sm text-gray-500">Coursera / Google</p>
+            </div>
+             <div class="card p-4">
+                <p class="font-medium text-gray-700">Cloud Computing</p>
+                <p class="text-sm text-gray-500">NPTEL</p>
+            </div>
+             <div class="card p-4">
+                <p class="font-medium text-gray-700">Matlab Onramp</p>
+                <p class="text-sm text-gray-500">MATLAB</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-8">Feel free to reach out via email or connect with me on LinkedIn.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                 <a href="mailto:samakshsethiya22@gmail.com" class="btn btn-primary">
+                     Email Me
+                </a>
+                <a href="https://linkedin.com/in/samaksh-sethiya" target="_blank" class="btn btn-secondary">
+                     LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Samaksh Sethiya. All rights reserved.</p>
+            </div>
+    </footer>
+
+</body>
+</html>
